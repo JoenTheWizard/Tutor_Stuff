@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\area.png" />
+    <None Remove="Images\shield.png" />
+    <None Remove="Images\wizard.png" />
+    <None Remove="Images\wizard1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\area.png" />
+    <Resource Include="Images\shield.png" />
+    <Resource Include="Images\wizard.png" />
+    <Resource Include="Images\wizard1.png" />
+  </ItemGroup>
+
+</Project>
