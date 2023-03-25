@@ -124,18 +124,6 @@ print(question_2('racecar'))
 
 
 def question_3(s):
-	upper_count = s.count(s.upper())
-	# if upper_count > 1 and upper_count % 2 == 0: # even check
-	# 	return 0 
-	# elif upper_count > 1 and upper_count % 2 != 0: # odd check
-	# 	return 1
-	# else:
-	# 	return -1
-
-#print(question_3('BOZO LOL')) # Should output 0
-
-
-def question_3(s):
     #We need count the amount of uppercase characters
     total = 0 #Start from 0
     #Iterate through each character
@@ -168,11 +156,6 @@ print(question_3('HELlo'))
 '''
 
 def question_4(s):
-	# s = ''
-	# if len(s) <= 3:
-	# 	s = s.split() # splits the string into a list
-	# 	return list(s.split(','))
-
     list_arr = []
     
     s_ = s.split(' ')
@@ -214,8 +197,6 @@ def question_5(l):
     return total/len(l)
 
 print(question_5([[1],[2],[3]]))
-
-#print(question_5([[1],[2], [3]]))
 
 '''	Function 6.
 	Implement this function to:
