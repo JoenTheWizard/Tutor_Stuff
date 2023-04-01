@@ -1,4 +1,4 @@
-#I will give you a file later, it will contain a large list of names and values.
+#I will give you a file later (python_dictionary.txt), it will contain a large list of names and values.
 #Here is an example of what a line of this file would look like
 
 #Bob : 20, 30, 10, 4 (Some of the scores list may vary in length)
