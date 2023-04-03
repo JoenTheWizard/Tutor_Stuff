@@ -61,10 +61,10 @@
 #======================
 # #Iterating through list value in dictionary
 
-# dictionary = {
-#     'list' : ['a','b','c','d'],
-#     'list1' : ['e','f','g','h']
-# }
+dictionary = {
+    'list' : ['a','b','c','d'],
+    'list1' : ['e','f','g','h']
+}
 
 # #Iterate through all the keys in the dictionary
 # for j in dictionary:
@@ -94,3 +94,28 @@
 # sorted_arr = sorted(arr)
 
 # print(sorted_arr)
+
+#Looping through a dictionary
+
+#'i' represents the key value returned from the dictionary as we iterate through out it
+#dictionary[i] represents the value we obtain from the key as we iterate through out it
+
+# for i in dictionary:
+#     print(i,dictionary[i][0])
+
+set1 = {1.2, 2, 3, 4}
+
+set2 = {1.2, 3, 5, 6}
+
+#Union of the two sets
+print(set1 | set2, "is the union")
+
+#Intersection of two sets (what they have in common)
+print(set1 & set2, "is the intersection")
+
+#Difference of two sets (Getting the difference between the two sets)
+print(set1 - set2, "is the difference of set1")
+print(set2 - set1, "is the difference of set2")
+
+#Symmetric difference of two sets (Getting the difference between the two sets and obtaining all the differences)
+print(set1 ^ set2, "is the symmetric difference")
