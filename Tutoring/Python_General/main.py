@@ -1,4 +1,3 @@
-
 #Python's built-in dictionary methods
 #.clear() -> clears dictionary
 #.get(<key>) -> gets value from key
