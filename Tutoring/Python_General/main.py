@@ -108,14 +108,38 @@ set1 = {1.2, 2, 3, 4}
 set2 = {1.2, 3, 5, 6}
 
 #Union of the two sets
-print(set1 | set2, "is the union")
+print(set1 | set2, "is the union") #set1.union(set2)
 
 #Intersection of two sets (what they have in common)
-print(set1 & set2, "is the intersection")
+print(set1 & set2, "is the intersection") #set1.intersection(set2)
 
 #Difference of two sets (Getting the difference between the two sets)
 print(set1 - set2, "is the difference of set1")
 print(set2 - set1, "is the difference of set2")
 
 #Symmetric difference of two sets (Getting the difference between the two sets and obtaining all the differences)
-print(set1 ^ set2, "is the symmetric difference")
+print(set1 ^ set2, "is the symmetric difference") #set1.symmetric_difference(set2)
+
+class NewClass:
+    #Constructor is usually required for a class definition
+    def __init__(self, name, ageNumber): #self represents the instance of the class
+        self.name = name #Specify the name within the instance of the class
+        self.age = ageNumber #Specify the age within the instance of the class
+    
+    #Print the name function (gets the name from instance)
+    def say_hello(self):
+        print("Hello",self.name)
+    
+    #Print age function definition (gets the age from instance)
+    def say_age(self):
+        print("You are",self.age,"years old")
+
+
+#When we create the object/class we call the constructor (or the __init__)
+var = NewClass('John',20)
+
+var.name = 'Smith' #We changed name variable of object to 'Smith'
+
+var.say_hello() #Call the "say_hello()" function specfied from the class
+
+var.say_age() #Call the 'say_age()' function specified from the class
