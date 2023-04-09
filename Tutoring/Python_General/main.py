@@ -1,3 +1,4 @@
+
 #Python's built-in dictionary methods
 #.clear() -> clears dictionary
 #.get(<key>) -> gets value from key
@@ -102,43 +103,59 @@ dictionary = {
 # for i in dictionary:
 #     print(i,dictionary[i][0])
 
-set1 = {1.2, 2, 3, 4}
+# set1 = {1.2, 2, 3, 4}
 
-set2 = {1.2, 3, 5, 6}
+# set2 = {1.2, 3, 5, 6}
 
-#Union of the two sets
-print(set1 | set2, "is the union") #set1.union(set2)
+# #Union of the two sets
+# print(set1 | set2, "is the union") #set1.union(set2)
 
-#Intersection of two sets (what they have in common)
-print(set1 & set2, "is the intersection") #set1.intersection(set2)
+# #Intersection of two sets (what they have in common)
+# print(set1 & set2, "is the intersection") #set1.intersection(set2)
 
-#Difference of two sets (Getting the difference between the two sets)
-print(set1 - set2, "is the difference of set1")
-print(set2 - set1, "is the difference of set2")
+# #Difference of two sets (Getting the difference between the two sets)
+# print(set1 - set2, "is the difference of set1")
+# print(set2 - set1, "is the difference of set2")
 
-#Symmetric difference of two sets (Getting the difference between the two sets and obtaining all the differences)
-print(set1 ^ set2, "is the symmetric difference") #set1.symmetric_difference(set2)
+# #Symmetric difference of two sets (Getting the difference between the two sets and obtaining all the differences)
+# print(set1 ^ set2, "is the symmetric difference") #set1.symmetric_difference(set2)
 
-class NewClass:
-    #Constructor is usually required for a class definition
-    def __init__(self, name, ageNumber): #self represents the instance of the class
-        self.name = name #Specify the name within the instance of the class
-        self.age = ageNumber #Specify the age within the instance of the class
+# class NewClass:
+#     #Constructor is usually required for a class definition
+#     def __init__(self, name, ageNumber): #self represents the instance of the class
+#         self.name = name #Specify the name within the instance of the class
+#         self.age = ageNumber #Specify the age within the instance of the class
     
-    #Print the name function (gets the name from instance)
-    def say_hello(self):
-        print("Hello",self.name)
+#     #Print the name function (gets the name from instance)
+#     def say_hello(self):
+#         print("Hello",self.name)
     
-    #Print age function definition (gets the age from instance)
-    def say_age(self):
-        print("You are",self.age,"years old")
+#     #Print age function definition (gets the age from instance)
+#     def say_age(self):
+#         print("You are",self.age,"years old")
+    
+    
 
+# #When we create the object/class we call the constructor (or the __init__)
+# var = NewClass('John',20)
 
-#When we create the object/class we call the constructor (or the __init__)
-var = NewClass('John',20)
+# var.name = 'Smith' #We changed name variable of object to 'Smith'
 
-var.name = 'Smith' #We changed name variable of object to 'Smith'
+# var.say_hello() #Call the "say_hello()" function specfied from the class
 
-var.say_hello() #Call the "say_hello()" function specfied from the class
+# var.say_age() #Call the 'say_age()' function specified from the class
 
-var.say_age() #Call the 'say_age()' function specified from the class
+def main():
+    #Initialize the string as an array (so we can call the .join() method to join with ':' as string)
+    string = []
+    with open('scores.txt', 'r') as f: #Open the text file ('scores.txt' contains the data, might want to change it)
+        for i in f.readlines(): #Read each line
+            line = i.strip().split() #Strip any newlines and split by space
+            string.append(line[0].upper()+":"+line[1].upper()) #Append the text to string list
+        
+    #Print in the format we want. The .join method should 'join' the list as a string with the
+    #':' symbol that acts as a separator from each element
+    #More info here: https://www.w3schools.com/python/ref_string_join.asp
+    print("cbrc_CTF{" + ":".join(string) + "}")
+
+main()
