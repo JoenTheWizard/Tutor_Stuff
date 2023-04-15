@@ -145,17 +145,108 @@ dictionary = {
 
 # var.say_age() #Call the 'say_age()' function specified from the class
 
-def main():
-    #Initialize the string as an array (so we can call the .join() method to join with ':' as string)
-    string = []
-    with open('scores.txt', 'r') as f: #Open the text file ('scores.txt' contains the data, might want to change it)
-        for i in f.readlines(): #Read each line
-            line = i.strip().split() #Strip any newlines and split by space
-            string.append(line[0].upper()+":"+line[1].upper()) #Append the text to string list
+# def main():
+#     #Initialize the string as an array (so we can call the .join() method to join with ':' as string)
+#     string = []
+#     with open('scores.txt', 'r') as f: #Open the text file ('scores.txt' contains the data, might want to change it)
+#         for i in f.readlines(): #Read each line
+#             line = i.strip().split() #Strip any newlines and split by space
+#             string.append(line[0].upper()+":"+line[1].upper()) #Append the text to string list
         
-    #Print in the format we want. The .join method should 'join' the list as a string with the
-    #':' symbol that acts as a separator from each element
-    #More info here: https://www.w3schools.com/python/ref_string_join.asp
-    print("cbrc_CTF{" + ":".join(string) + "}")
+#     #Print in the format we want. The .join method should 'join' the list as a string with the
+#     #':' symbol that acts as a separator from each element
+#     #More info here: https://www.w3schools.com/python/ref_string_join.asp
+#     print("cbrc_CTF{" + ":".join(string) + "}")
 
-main()
+# main()
+
+#Our parent/super class
+class Animal:
+    #Declaring a constructor
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        print(f"{self.name} is making a sound")
+
+#Our child class (Dog is inheriting from Animal class)
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name) #We are calling the constructor from our parent/super class
+    
+    def speak(self):
+        print(f"{self.name} is barking")
+
+#initializing an object (which is our Animal class)
+animal = Animal("animal")
+
+#Call the speak method defined from our Animal class
+animal.speak()
+
+#So creating our Dog object (this will call the constructor when you call Dog(name))
+dog = Dog("dog")
+
+#Run the speak method within our current instance of dog.
+dog.speak()
+
+
+#Another inheritance example
+#Vehicle here is super class/parent class that our child classes will inherit
+class Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def start(self):
+        print("Starting the engine...")
+
+    def stop(self):
+        print("Stopping the engine...")
+
+#This is class Car which is our child class inherited from Vehicle
+class Car(Vehicle):
+    #Define constructor (we define from super class/parent class Vehicles constructor)
+    #And also parse in num_wheels for car class
+    def __init__(self, make, model, year, num_wheels):
+        super().__init__(make, model, year)
+        self.num_wheels = num_wheels
+
+    #Define method
+    def drive(self):
+        print(f"Driving the {self.make} {self.model} with {self.num_wheels} wheels.")
+
+#This is class Motorcycle which is our child class inherited from Vehicle
+class Motorcycle(Vehicle):
+    #Define constructor (we define from super class/parent class Vehicles constructor)
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+    #Define method
+    def drive(self):
+        print(f"Riding the {self.make} {self.model}.")
+
+
+#Create car object
+car = Car("Toyota", "Corolla", 2020, 4)
+#.start() and .stop() is not defined specifically within Car class but it does inherit from Vehicle
+car.start()
+car.drive()
+car.stop()
+
+#Create motorcycle object
+motorcycle = Motorcycle("Harley-Davidson", "Sportster", 2021)
+
+#.start() and .stop() is not defined specifically within Motorcycle class but it does inherit from Vehicle
+motorcycle.start()
+motorcycle.drive()
+motorcycle.stop()
+
+
+#Classes question in Python
+
+#Create a class called Person that stores name, lastname and age.
+#Create a method called 'personInfo()' which should print the name, last name and age
+
+#It should look like this:
+#person = Person("John", "Smith", 20)
+#person.personInfo()
