@@ -160,86 +160,85 @@ dictionary = {
 # main()
 
 #Our parent/super class
-class Animal:
-    #Declaring a constructor
-    def __init__(self, name):
-        self.name = name
+# class Animal:
+#     #Declaring a constructor
+#     def __init__(self, name):
+#         self.name = name
     
-    def speak(self):
-        print(f"{self.name} is making a sound")
+#     def speak(self):
+#         print(f"{self.name} is making a sound")
 
-#Our child class (Dog is inheriting from Animal class)
-class Dog(Animal):
-    def __init__(self, name):
-        super().__init__(name) #We are calling the constructor from our parent/super class
+# #Our child class (Dog is inheriting from Animal class)
+# class Dog(Animal):
+#     def __init__(self, name):
+#         super().__init__(name) #We are calling the constructor from our parent/super class
     
-    def speak(self):
-        print(f"{self.name} is barking")
+#     def speak(self):
+#         print(f"{self.name} is barking")
 
-#initializing an object (which is our Animal class)
-animal = Animal("animal")
+# #initializing an object (which is our Animal class)
+# animal = Animal("animal")
 
-#Call the speak method defined from our Animal class
-animal.speak()
+# #Call the speak method defined from our Animal class
+# animal.speak()
 
-#So creating our Dog object (this will call the constructor when you call Dog(name))
-dog = Dog("dog")
+# #So creating our Dog object (this will call the constructor when you call Dog(name))
+# dog = Dog("dog")
 
-#Run the speak method within our current instance of dog.
-dog.speak()
-
-
-#Another inheritance example
-#Vehicle here is super class/parent class that our child classes will inherit
-class Vehicle:
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-
-    def start(self):
-        print("Starting the engine...")
-
-    def stop(self):
-        print("Stopping the engine...")
-
-#This is class Car which is our child class inherited from Vehicle
-class Car(Vehicle):
-    #Define constructor (we define from super class/parent class Vehicles constructor)
-    #And also parse in num_wheels for car class
-    def __init__(self, make, model, year, num_wheels):
-        super().__init__(make, model, year)
-        self.num_wheels = num_wheels
-
-    #Define method
-    def drive(self):
-        print(f"Driving the {self.make} {self.model} with {self.num_wheels} wheels.")
-
-#This is class Motorcycle which is our child class inherited from Vehicle
-class Motorcycle(Vehicle):
-    #Define constructor (we define from super class/parent class Vehicles constructor)
-    def __init__(self, make, model, year):
-        super().__init__(make, model, year)
-    #Define method
-    def drive(self):
-        print(f"Riding the {self.make} {self.model}.")
+# #Run the speak method within our current instance of dog.
+# dog.speak()
 
 
-#Create car object
-car = Car("Toyota", "Corolla", 2020, 4)
-#.start() and .stop() is not defined specifically within Car class but it does inherit from Vehicle
-car.start()
-car.drive()
-car.stop()
+# #Another inheritance example
+# #Vehicle here is super class/parent class that our child classes will inherit
+# class Vehicle:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
 
-#Create motorcycle object
-motorcycle = Motorcycle("Harley-Davidson", "Sportster", 2021)
+#     def start(self):
+#         print("Starting the engine...")
 
-#.start() and .stop() is not defined specifically within Motorcycle class but it does inherit from Vehicle
-motorcycle.start()
-motorcycle.drive()
-motorcycle.stop()
+#     def stop(self):
+#         print("Stopping the engine...")
 
+# #This is class Car which is our child class inherited from Vehicle
+# class Car(Vehicle):
+#     #Define constructor (we define from super class/parent class Vehicles constructor)
+#     #And also parse in num_wheels for car class
+#     def __init__(self, make, model, year, num_wheels):
+#         super().__init__(make, model, year)
+#         self.num_wheels = num_wheels
+
+#     #Define method
+#     def drive(self):
+#         print(f"Driving the {self.make} {self.model} with {self.num_wheels} wheels.")
+
+# #This is class Motorcycle which is our child class inherited from Vehicle
+# class Motorcycle(Vehicle):
+#     #Define constructor (we define from super class/parent class Vehicles constructor)
+#     def __init__(self, make, model, year):
+#         super().__init__(make, model, year)
+#     #Define method
+#     def drive(self):
+#         print(f"Riding the {self.make} {self.model}.")
+
+
+# #Create car object
+# car = Car("Toyota", "Corolla", 2020, 4)
+# #.start() and .stop() is not defined specifically within Car class but it does inherit from Vehicle
+# car.start()
+# car.drive()
+# car.stop()
+
+# #Create motorcycle object
+# motorcycle = Motorcycle("Harley-Davidson", "Sportster", 2021)
+
+# #.start() and .stop() is not defined specifically within Motorcycle class but it does inherit from Vehicle
+# motorcycle.start()
+# motorcycle.drive()
+# motorcycle.stop()
 
 #Classes question in Python
 
@@ -249,3 +248,84 @@ motorcycle.stop()
 #It should look like this:
 #person = Person("John", "Smith", 20)
 #person.personInfo()
+
+#=== Polymorphism example ===
+#Parent class (Animal)
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+#     #Method make_sound defined in our parent class Animal
+#     def make_sound(self):
+#         pass
+
+# class Dog(Animal):
+#     #Defining our own make_sound method inherited from Animal
+#     #This is polymorphism
+#     def make_sound(self):
+#         print(f"{self.name} barks")
+
+# class Cat(Animal):
+#     #Same thing with Cat class
+#     def make_sound(self):
+#         print(f"{self.name} meows")
+
+# def animal_sound(animal):
+#     animal.make_sound()
+
+# dog = Dog("Fido")
+# cat = Cat("Whiskers")
+
+# animal_sound(dog)  # Output: Fido barks
+# animal_sound(cat)  # Output: Whiskers meows
+
+# ==== Abstract example ====
+# from abc import ABC, abstractmethod #Need this to do abstract classes and methods
+
+# #Parent class Account.
+# #Account is an abstract class they we defined via ABC module
+# class Account(ABC):
+#     def __init__(self, balance):
+#         self.balance = balance
+    
+#     #Define abstract methods
+#     @abstractmethod
+#     def deposit(self, amount):
+#         pass
+    
+#     @abstractmethod
+#     def withdraw(self, amount):
+#         pass
+
+# #In order for us to call the abstract methods/class we need to inherit it to a
+# #child class thats not abstract
+# class SavingsAccount(Account):
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print(f"Deposited {amount} in savings\nBalance: {self.balance}")
+    
+#     def withdraw(self, amount):
+#         self.balance += amount
+#         print(f"Withdrawn {amount} in savings\nBalance: {self.balance}")
+    
+
+# account = SavingsAccount(2000)
+# account.deposit(500)
+
+# === Static class and methods example ===
+class StringUtils:
+    @staticmethod
+    def reverse(string):
+        return string[::-1]
+
+    @staticmethod
+    def capitalize(string):
+        return string.upper()
+
+    @staticmethod
+    def is_palindrome(string):
+        return string == string[::-1]
+
+#Call the static methods (which means we don't need to use an instance of a class)
+print(StringUtils.reverse("hello"))  # Output: olleh
+print(StringUtils.capitalize("hello"))  # Output: HELLO
+print(StringUtils.is_palindrome("racecar"))  # Output: True
