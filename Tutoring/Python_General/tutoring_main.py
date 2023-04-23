@@ -52,7 +52,7 @@
 
 #=== Try/Except/Finally ===
 
-#When we want to an error with 'try/except' you pass in the code within the 'try' block.
+#When we want to handle an error with 'try/except' you pass in the code within the 'try' block.
 #If there are any errors raised within the try block then the 'except' will be raised
 #'finally' is just to be called no matter we have an error or no error
 try:
