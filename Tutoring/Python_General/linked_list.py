@@ -30,12 +30,13 @@ class LinkedList:
         newNode = Node(data) #Create the new node
         newNode.next = self.head #Make the newNode's next equal to the head
         self.head = newNode #Now the new head is the newNode we made
+        self.size += 1 #Increment the size of list
     
     #Pop - This removes the top node from the list
     def pop(self):
         if self.head: #If the head node is not null
             self.head = self.head.next #Then we make the head node equal to the next node
-            self.size -= 1 #Decrement size
+            self.size -= 1 #Decrement size of list
 
     #Printing the list
     def printList(self):
