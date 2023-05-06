@@ -52,7 +52,7 @@
 
 #=== Try/Except/Finally ===
 
-#When we want to handle an error with 'try/except' you pass in the code within the 'try' block.
+#When we want to an error with 'try/except' you pass in the code within the 'try' block.
 #If there are any errors raised within the try block then the 'except' will be raised
 #'finally' is just to be called no matter we have an error or no error
 try:
@@ -66,3 +66,12 @@ except: #This is for all the exceptions to handle
     print('Error')
 finally:
     print('Finally')
+
+
+# Try/Except question
+# Write a small program where it takes a user input and the user input is then used as a divisor to
+# the number '100' as the dividend (100 / <user-input>)
+# Handle the exceptions raised by the error (so if the user inputs/divides by 0 it shold print:
+#'Cannot divide by zero'. 
+# If the user inputs a non-integer value it should print 
+# 'Value is not a number!'
