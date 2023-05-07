@@ -75,3 +75,42 @@ finally:
 #'Cannot divide by zero'. 
 # If the user inputs a non-integer value it should print 
 # 'Value is not a number!'
+
+# OOP
+# - Advantages include encapsulation, inheritance, polymorphism with the use of objects and classes
+# - Disadvantages include complexity
+
+# Object-oriented programming is a paradigm in programming where one uses objects/classes to 
+# use or encapsulate methods and variables within an instance of an object. OOP provides many different
+# functionalities such as polymorphism, inheritance, abstract, encapsulation and static.
+
+# An example of a class in Python, is initiating a class with a constructor specifier, which is used when
+# we create our object
+
+#(They can be multiparadigm but these languages support OOP)
+# Java - OOP
+# C# - OOP
+# Python - OOP
+
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+    
+#     def getname(self):
+#         return self.name
+
+#This is a way of creating or specifying a class in Python. We created a 'Person' class which creates
+# a constructor with the 'self.name' global variable which is initialized from the parametes passed in from
+# the constructor paramaters (when you create the object)
+
+#We also specify a function 'getname()' which just returns the name from that instance of the object
+
+# Procedural programming is another paradigm in programming that is mainly focusing around the concepts
+# of just statements, functions, or just instructions. The main difference with OOP is that it is less
+# complex as you don't need to use objects or classes. Procedural doesn't use OOP-like functionalities,
+# because it is mainly based around simple functions, no use of objects or instances of classes.
+# Disadvantages include lack of security, harder to maintain. Advantages include easier to read, faster than OOP.
+
+# C - Procedural
+# Fortran - Procedural
+# BASIC - Procedural
