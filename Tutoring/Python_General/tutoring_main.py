@@ -114,3 +114,30 @@ finally:
 # C - Procedural
 # Fortran - Procedural
 # BASIC - Procedural
+
+# Game logic
+
+"""
+
+player = Player(room1)
+
+while True:
+    try:
+        user_input = input('up down left right look attack...')
+    except:
+        print('error')
+    
+    print('Player health',player.current_health)
+    if user_input == 'up':
+        if not player.current_room.monsters and player.current_room.up != None: #Monsters list is empty of current room
+                player.current_room = player.current_room.up
+        else:
+            for enemy in player.current_room.monsters:
+                enemy.attack(player)
+
+    elif user_input == 'attack':
+        
+    else:
+        print('Please select valid option')
+
+"""
