@@ -4,6 +4,11 @@
 # To make hidden files or directories all you have to do is put '.' in front of the name
 #Example: 'mkdir .hidden_folder' or 'touch .hidden_file'
 
+#If you have the base64 command on your Linux system you can use for encoding
+# echo "Hello, World!" | base64
+#And for decoding
+#echo "SGVsbG8sIFdvcmxkIQ==" | base64 -d
+#If you do not have the 'base64' command, you can try online tools to do the same job.
 import base64
 
 def rot13(text):
