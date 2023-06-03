@@ -8,7 +8,8 @@
 # echo "Hello, World!" | base64
 #And for decoding
 #echo "SGVsbG8sIFdvcmxkIQ==" | base64 -d
-#If you do not have the 'base64' command, you can try online tools to do the same job.
+#If you do not have the 'base64' command, you can try online tools or use Python's base64 module to do the same job.
+
 import base64
 
 def rot13(text):
