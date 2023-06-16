@@ -32,7 +32,7 @@ Use Python's `requests` module (if you by chance don't have it working or instal
 # Task 3
 ## Hangman game
 Make a hangman game that runs under the terminal where the computer chooses the word and the user has to guess it. 
-There should be a user input where it can only take one character (the letter) and if the user inputs a letter that resides within the word make sure to display it. You can make the computer randomly pick a word (maybe from a list), but make the words have character length greater or equal to 4. If the user guesses wrong 6 times, it's game over, if the user gets the entire word its a win.
+There should be a user input where it can only take one character (the letter) and if the user inputs a letter that resides within the word make sure to display it. You can make the computer randomly pick a word from a set of words that you defined (maybe from a list, set, dictionary etc), but make the words have character length greater or equal to 4. If the user guesses wrong 6 times, it's game over, if the user gets the entire word its a win.
 
 Here is an example of what the game could look like:
 ```
