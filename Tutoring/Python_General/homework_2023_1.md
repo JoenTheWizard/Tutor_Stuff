@@ -29,7 +29,7 @@ For extension, try make the `xor_cipher` function support any size key.
 ### In this question you will have to investigate and research about HTTP requests, what HTTP and a HTTP header is. As part of the task you have to investigate how to "send a HTTP request and get a response" in Python.
 Use Python's `requests` module (if you by chance don't have it working or installed try `pip install requests`) to send an HTTP request to the following URI `https://ifconfig.me/all` and print the response. The response should give you a string representing the HTTP headers which you can print to the terminal. Explain what the `ip_addr`, `user_agent` and `method` headers mean.
 
-An example output from the program (you can keep this output for your own eyes):
+An example output from the program (Note: Its better off not showing the output from your program to anyone else):
 ```
 ip_addr: 112.134.65.21
 remote_host:
