@@ -55,10 +55,6 @@ Guess letter> O
 
 WORD:
 _ E L L O
-Guess letter> L
-
-WORD:
-_ E L L O
 Guess letter> C
 Incorrect guess (Guesses left: 1/6)
 
