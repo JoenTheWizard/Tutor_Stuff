@@ -22,6 +22,8 @@ decrypted_message = xor_cipher(ciphertext, key)
 print("Decrypted message:", decrypted_message) #Message is now decoded
 ```
 
+For extension, try make the `xor_cipher` function support any size key.
+
 # Task 2
 ## HTTP Requests
 ### In this question you will have to investigate and research about HTTP requests, what HTTP and a HTTP header is. As part of the task you have to investigate how to "send a HTTP request and get a response" in Python.
