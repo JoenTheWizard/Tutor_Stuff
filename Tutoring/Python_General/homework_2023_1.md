@@ -61,7 +61,7 @@ Incorrect guess (Guesses left: 1/6)
 WORD:
 _ E L L O
 Guess letter> ASD
-You can only input singular characers!
+You can only input singular characters!
 
 WORD:
 _ E L L O
