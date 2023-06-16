@@ -24,7 +24,7 @@ print("Decrypted message:", decrypted_message) #Message is now decoded
 
 # Task 2
 ## HTTP Requests
-### In this question you will have to investigate and research about HTTP requests, what HTTP and a HTTP header is and will have to investigate how to "send a HTTP request and get a response" in Python.
+### In this question you will have to investigate and research about HTTP requests, what HTTP and a HTTP header is. As part of the task you have to investigate how to "send a HTTP request and get a response" in Python.
 Use Python's `requests` module to send an HTTP request to the following URI `https://ifconfig.me/all` and print the response. The response should give you a string representing the HTTP header which you can print to the terminal. Explain what the `ip_addr`, `user_agent` and `method` headers are and what they mean.
 
 # Task 3
