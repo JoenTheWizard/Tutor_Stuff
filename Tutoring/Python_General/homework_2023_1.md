@@ -45,6 +45,7 @@ Guess letter> L
 WORD:
 _ E L L _
 Guess letter> L
+Word has already been guessed!
 
 WORD:
 _ E L L _
