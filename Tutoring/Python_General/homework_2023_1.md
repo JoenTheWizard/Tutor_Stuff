@@ -6,7 +6,7 @@ If you are having troubles with some of the questions, it's fine to skip some of
 # Task 1
 ## XOR cipher
 ### In this question you will have to investigate and research about the XOR cipher.
-Create a function called `xor_string` that uses XOR cipher to encode a string using XOR operation. To make this task simpler, the key size will just be of size 1.
+Create a function called `xor_cipher` that uses the XOR cipher algorithm to encode a string (using XOR operation). To make this task simpler, the key size will just be of size 1.
 
 Example of what it would look like using the function:
 ```py
