@@ -30,7 +30,7 @@ For extension, try make the `xor_cipher` function support any size key.
 Use Python's `requests` module (if you by chance don't have it working or installed try `pip install requests`) to send an HTTP request to the following URI `https://ifconfig.me/all` and print the response. The response should give you a string representing the HTTP headers which you can print to the terminal. Explain what the `ip_addr`, `user_agent` and `method` headers mean.
 
 An example output from the program (**Note: Its better off not showing the output from your program to anyone else, this task just requires you to explain what these headers mean and understanding HTTP requests and responses using Python**):
-```
+```http
 ip_addr: 112.134.65.21
 remote_host:
 user_agent: python-requests/2.25.0
