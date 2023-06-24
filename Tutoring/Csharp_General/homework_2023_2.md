@@ -17,7 +17,7 @@ public class Program
 
 	public static void Main()
 	{
-		CalculateSum(5); //Would output to the console '15'
+		CalculateSum(5); //Would output to the console '15' (1 + 2 + 3 + 4 + 5)
 	}
 }
 ```
