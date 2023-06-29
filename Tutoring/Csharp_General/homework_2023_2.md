@@ -61,5 +61,5 @@ public class Program
 ```
 
 # Task 4
-## 
+## Bank account class
 Write a C# class that simulates a basic bank account. The class should have properties for the account number, account holder name, and balance. Implement methods to deposit, withdraw, and display the account details, including the account balance.
