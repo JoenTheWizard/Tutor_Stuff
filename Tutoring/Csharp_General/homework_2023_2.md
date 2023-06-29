@@ -27,7 +27,7 @@ public class Program
 Write a C# function that takes a string as input and returns the string reversed.
 
 Example:
-```
+```cs
 using System;
 				
 public class Program
@@ -46,7 +46,7 @@ public class Program
 Write a C# function that takes an integer input and calculates the factorial of that number.
 
 Example:
-```
+```cs
 using System;
 				
 public class Program
