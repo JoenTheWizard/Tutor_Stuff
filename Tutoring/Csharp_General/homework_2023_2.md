@@ -21,3 +21,45 @@ public class Program
 	}
 }
 ```
+
+# Task 2
+## Reverse a String
+Write a C# function that takes a string as input and returns the string reversed.
+
+Example:
+```
+using System;
+				
+public class Program
+{
+  // Write your function here
+
+	public static void Main()
+	{
+		Console.WriteLine(ReverseString("Hello, world!")); // Output: "!dlrow ,olleH"
+	}
+}
+```
+
+# Task 3
+## Calculate the Factorial of a Number
+Write a C# function that takes an integer input and calculates the factorial of that number.
+
+Example:
+```
+using System;
+				
+public class Program
+{
+  // Write your function here
+
+	public static void Main()
+	{
+		Console.WriteLine(Factorial(5)); // Output: 120
+	}
+}
+```
+
+# Task 4
+## 
+Write a C# class that simulates a basic bank account. The class should have properties for the account number, account holder name, and balance. Implement methods to deposit, withdraw, and display the account details, including the account balance.
