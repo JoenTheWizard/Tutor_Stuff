@@ -32,7 +32,7 @@ using System;
 				
 public class Program
 {
-  // Write your function here
+  //Write your function here
 
 	public static void Main()
 	{
@@ -51,7 +51,7 @@ using System;
 				
 public class Program
 {
-  // Write your function here
+  //Write your function here
 
 	public static void Main()
 	{
