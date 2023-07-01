@@ -61,5 +61,44 @@ public class Program
 			Console.WriteLine(v);
 		}
 
+
+
+		//Array, Lists and dictionaries in C#
+
+		//Python's way of declaring a list: list = ['1',2,True]
+		
+	        //Array of integers (storing fixed size of 10)
+	        int[] arr = new int[10];
+	
+	        //Assign values within the array
+	        for (int i = 0; i < arr.Length; i++) {
+	            arr[i] = i;
+	        }
+	
+	        //Use a foreach loop to print the value within the array
+	        foreach (int num in arr) {
+	            Console.WriteLine(num);
+	        }
+	
+	        //Another way of declaring an array (not a set like in Python)
+	        int[] arr_1 = { 3, 4, 5, 6, 7, 8 };
+	
+	        //List/Linked list
+	        List<string> list = new List<string>();
+	
+	        //Assign values within the array
+	        for (int i = 0; i < 10; i++) {
+	            list.Add("Hello world");
+	        }
+	
+	        //Print each value from the list
+	        foreach (string str in list) {
+	            Console.WriteLine(str);
+	        }
+	
+	        //Dictionary Initialization
+	        Dictionary<int, string> dictionary = new Dictionary<int, string>();
+	        //Append/add value to the dictionary
+	        dictionary.Add(1, "value1");
 	}
 }
