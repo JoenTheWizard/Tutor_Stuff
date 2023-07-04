@@ -65,7 +65,7 @@ public class Program
 Write a C# class that simulates a basic bank account. The class should have properties for the account number, account holder name, and balance. Implement methods to deposit, withdraw, and display the account details, including the account balance.
 
 # Task 5
-# Enums
+## Enums
 Create an enum called Color representing different colors: Red, Green, Blue, Yellow, and White. Write a program that prompts the user to enter their favorite color and displays a message based on the entered color. If the color is Red, display "Red is a vibrant color!". If the color is Green, display "Green represents nature and freshness.". If the color is Blue, display "Blue symbolizes calmness and serenity.". If the color is Yellow, display "Yellow is associated with happiness and energy.". If the color is White, display "White signifies purity and innocence.". For any other color, display "Your favorite color is unique!".
 
 # Task 6
