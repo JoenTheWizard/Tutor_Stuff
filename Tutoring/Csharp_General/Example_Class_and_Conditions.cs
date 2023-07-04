@@ -34,6 +34,17 @@ public class Student {
 
 public class Program
 {
+       //Initialize the enum 'Days' which stores the days of week in order
+	enum Days
+	{
+	   Monday,
+	   Tuesday, 
+	   Wednesday,
+	   Thursday,
+	   Friday,
+	   Saturday,
+	   Sunday
+	}
 	public static void Main()
 	{
 		//Student is initialized with "John" as our name specifier and 12 as our age
@@ -60,7 +71,6 @@ public class Program
 			v++;
 			Console.WriteLine(v);
 		}
-
 
 
 		//Array, Lists and dictionaries in C#
@@ -100,5 +110,29 @@ public class Program
 	        Dictionary<int, string> dictionary = new Dictionary<int, string>();
 	        //Append/add value to the dictionary
 	        dictionary.Add(1, "value1");
+
+
+		//Enums
+		//Initialize an value from the enum 'Days'
+	        Days days = Days.Saturday;
+	
+	        //This casts '1' to 'Days' enum. It is equivalent to saying Days.Tuesday
+	        //Days days = (Days)1;
+	
+	        //Print the value from 'days' that it stores
+	        Console.WriteLine("The day today is " + days);
+	
+	        //Enums are stored as if they were integer values with specific uses/values.
+	        //So in our case Days enum at '0' represents 'Monday' or '1' represents 'Tuesday'
+	
+	        //So if we have a day that's greater than 'Friday' then it is a weekend otherwise it is a weekday
+	        if (days > Days.Friday)
+	        {
+	            Console.WriteLine("It is a weekend");
+	        }
+	        else
+	        {
+	            Console.WriteLine("It is a weekday");
+	        }
 	}
 }
