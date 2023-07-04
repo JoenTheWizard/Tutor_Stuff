@@ -59,14 +59,41 @@ public class Program
 	}
 }
 ```
-## 
 
 # Task 4
 ## Bank account class
 Write a C# class that simulates a basic bank account. The class should have properties for the account number, account holder name, and balance. Implement methods to deposit, withdraw, and display the account details, including the account balance.
 
-
+# Task 5
+# Enums
+Create an enum called Color representing different colors: Red, Green, Blue, Yellow, and White. Write a program that prompts the user to enter their favorite color and displays a message based on the entered color. If the color is Red, display "Red is a vibrant color!". If the color is Green, display "Green represents nature and freshness.". If the color is Blue, display "Blue symbolizes calmness and serenity.". If the color is Yellow, display "Yellow is associated with happiness and energy.". If the color is White, display "White signifies purity and innocence.". For any other color, display "Your favorite color is unique!".
 
 # Task 6
+## Dictionaries
+Use the following data stored from a file
+```
+Alice: 85
+Bob: 73
+Charlie: 92
+Dave: 68
+```
+And store them into dictionaries (it should be of types <string,int>). Then output the user with the highest score from the dictionary
+
+
+# Task 7
 ## Linked list
-Write a linked list class in C#
+Write a linked list class for strings in C#. It should be able to append, push and pop strings from the list. Also implement a 'printList()' function in order to print the contents from the list
+Example of using the list in a prgoram
+```cs
+MyLinkedList list = new MyLinkedList();
+list.add(3);
+list.add(5);
+list.add(1);
+
+list.pop()
+list.pop()
+
+list.push(4);
+
+list.printList();
+```
