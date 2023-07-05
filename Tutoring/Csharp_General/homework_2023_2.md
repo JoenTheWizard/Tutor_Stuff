@@ -86,14 +86,14 @@ Write a linked list class for strings in C#. It should be able to append, push a
 Example of using the list in a prgoram
 ```cs
 MyLinkedList list = new MyLinkedList();
-list.add(3);
-list.add(5);
-list.add(1);
+list.add("a");
+list.add("b");
+list.add("c");
 
 list.pop()
 list.pop()
 
-list.push(4);
+list.push("hello");
 
 list.printList();
 ```
