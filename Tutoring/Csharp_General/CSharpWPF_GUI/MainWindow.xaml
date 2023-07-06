@@ -1,0 +1,20 @@
+<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Our new program" Height="450" Width="800">
+    <Grid>
+        <!--Split the the main grid into separate equal rows--> 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Define textbox and button widgets -->
+        <TextBox x:Name="textBox1" Margin="0,0,0,0" TextWrapping="Wrap" Text="Hello World" VerticalAlignment="Center" Width="284" Height="67"/>
+        <Button Grid.Row="1" VerticalAlignment="Bottom" Content="Click me!" Margin="314,0,336,33" Height="25" Click="Button_Click"/>
+    </Grid>
+</Window>
