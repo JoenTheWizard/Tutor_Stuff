@@ -30,10 +30,23 @@ namespace WpfApp1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Changing the text from our text box
-            textBox1.Text = "Welcome to GUI C#";
+            //textBox1.Text = "Welcome to GUI C#";
             
             //Make a message box (dialog box) appear with text
-            MessageBox.Show("Changed text!");
+            //MessageBox.Show("Changed text!");
+
+            //Initialize the thread by passing the function
+            Thread thread = new Thread(ThreadedFunction);
+            //Start the thread
+            thread.Start();
+        }
+        //This is going to be executed all on a separate thread
+        private void ThreadedFunction()
+        {
+            //Long sleep (just to simulate busy thread)
+            Thread.Sleep(3000);
+            //textBox1 is owned by the application thread so you must pass it through Dispatcher.Invoke passed as a lambda function
+            Dispatcher.Invoke(() => textBox1.AppendText("Hello world!\n"));
         }
     }
 }
