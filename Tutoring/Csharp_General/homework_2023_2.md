@@ -100,14 +100,14 @@ list.printList();
 
 # Task 8
 ## Multithreading
-## This task might require you research more on Threads in C#
+### This task might require you research more on Threads in C#
 Write a C# program that creates a user-defined number of threads within a Console environment. Each thread should execute concurrently and print a message indicating its thread number. The program should prompt the user to enter the number of threads and then create the specified number of threads. Each thread should print a message stating its thread number. Additionally, introduce a random delay (between 1 and 10 seconds) using the `Thread.Sleep` method to simulate some processing time before printing the message.
 Note:
 If you want to get a random delay amount in C# between 1-10 seconds use `new Random().Next(1000,10000)` (in terms of milliseconds)
 
 # Task 9
 ## Temperature converter GUI
-## This task might require you research more on the other WPF controls (such as RadioButtons)
+### This task might require you research more on the other WPF controls (such as RadioButtons)
 Create a simple WPF application that allows users to convert temperatures between Celsius and Fahrenheit. The application should have the following components:
 - One TextBox for the input value
 - Two RadioButton controls to select the conversion direction: Celsius to Fahrenheit or Fahrenheit to Celsius.
