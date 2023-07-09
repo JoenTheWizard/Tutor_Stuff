@@ -101,8 +101,6 @@ list.printList();
 # Task 8
 ## Multithreading
 ## This task might require you research more on Threads in C#
-Make a C# application (preferably within the Console environment) that creates a dynamic amount of threads from user input and executes them all. Make the thread execute which thread is being executed 
-
 Write a C# program that creates a user-defined number of threads within a Console environment. Each thread should execute concurrently and print a message indicating its thread number. The program should prompt the user to enter the number of threads and then create the specified number of threads. Each thread should print a message stating its thread number. Additionally, introduce a random delay (between 1 and 10 seconds) using the Thread.Sleep method to simulate some processing time before printing the message.
 Note:
 If you want to get a random delay amount in C# between 1-10 seconds use `new Random().Next(1000,10000)` (in terms of milliseconds)
