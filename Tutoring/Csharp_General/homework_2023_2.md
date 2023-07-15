@@ -119,3 +119,27 @@ Requirements:
 - The conversion formula from Fahrenheit to Celsius is: Celsius = (Fahrenheit - 32) * 5/9.
 - The result should be rounded to two decimal places.
 - Orientation does not matter (You can split the grid into sections if you want)
+
+# Task 10
+## Bookstore
+### This task might require you research more on the other WPF controls (such as ListBox)
+
+Create a simple WPF application for a bookstore that allows users to search for books based on their titles. The application should have the following components:
+- A TextBox for entering the search query.
+- A Button to trigger the search event.
+- A ListBox to display the search results.
+
+Requirements:
+- When the user enters a search query and clicks the search button, the application should display the books whose titles contain the search query in the ListBox.
+- Create a class named Book with properties like Title, Author, and Genre.
+- Create a collection of Book objects to represent the available books in the bookstore.
+- If no books match the search query, display a message in the ListBox indicating that no results were found.
+- Store a `books.txt` file for which the library will store all the books. The file will be in the format of `Title,Author,Genre` in a new line. The file should contain the following:
+```
+Harry Potter and the Philosopher's Stone, J.K. Rowling, Fantasy
+To Kill a Mockingbird, Harper Lee, Fiction
+The Great Gatsby, F. Scott Fitzgerald, Fiction
+Pride and Prejudice, Jane Austen, Romance
+1984, George Orwell, Dystopian
+The Catcher in the Rye, J.D. Salinger, Fiction
+```
