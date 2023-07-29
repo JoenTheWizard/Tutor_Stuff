@@ -58,7 +58,7 @@ public class Program
                 break;
         }
 
-        //2D dimensional arrays
+        //2D arrays
         //4 columns 4 rows
         int[,] vals = { { 1 , 2, 3, 4 }, 
                     { 2 , 3, 4, 5 }, 
