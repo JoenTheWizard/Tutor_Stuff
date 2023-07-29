@@ -80,7 +80,7 @@ public class Program
         }
 
         //Lists are dynamic, in the way that we can dynamically add values to the list during run-time
-        //of the program. Unlike arrays which are statically initialized.
+        //of the program, unlike arrays.
         List<string> list = new List<string>();
         list.Add("Val");
 
