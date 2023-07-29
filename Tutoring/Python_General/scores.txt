@@ -1,4 +1,0 @@
-Alice: 85
-Bob: 73
-Charlie: 92
-Dave: 68
