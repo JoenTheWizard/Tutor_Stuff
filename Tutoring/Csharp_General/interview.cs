@@ -16,7 +16,7 @@ public class Program
 
     public static void Main()
     {
-        //Initialize an value from the enum 'Days'
+        //Initialize a value from the enum 'Days'
         Days days = Days.Saturday;
 
         //This casts '1' to 'Days' enum. It is equivalent to saying Days.Tuesday
