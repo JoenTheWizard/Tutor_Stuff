@@ -52,7 +52,7 @@ public class Program
 		obj.Method2();
 		obj.Method3();
 		
-		//Classing a static method
+		//Calling a static method
 		B.Method4();
 		
 		Console.WriteLine(obj.val);
