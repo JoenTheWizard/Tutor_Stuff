@@ -3,6 +3,10 @@ using System;
 public class Program
 {
     //Initialize the enum 'Days' which stores the days of week in order
+    //Enums provide a natural way to represent and work with a finite set of related values.
+    //By default, the type of an enum is `int`, but you can specify a different integral type if needed.
+    //In this enum, the underlying values are automatically assigned starting from 0 and incrementing by 1 for each subsequent value.
+    //For example, Monday has the integral value of 0, Tuesday has 1, and so on.
     enum Days
     {
         Monday,
