@@ -13,7 +13,27 @@ public class Program
         Saturday,
         Sunday
     }
+    //Defines the 'Student' struct. A struct in C# is a value type that stores small groups of related variables.
+    //Unlike classes, structs cannot inherit from other structs or classes, but they can implement interfaces.
+    //The difference between structs and classes is that structs are value types and classes are reference types.
+    //This means that when a struct is assigned to a new variable, a copy of the actual value is made, whereas with a class, 
+    //the memory address of the value is copied, not the actual value itself.
+    struct Student
+    {
+        public int Id;
+        public string Name;
 
+        public Student(int Id, string Name)
+        {
+            this.Id = Id;
+            this.Name = Name;
+        }
+
+        public void printInfo() {
+            Console.WriteLine("{0}, {1}", Id, Name);
+        }
+    }
+    
     public static void Main()
     {
         //Initialize a value from the enum 'Days'
@@ -115,5 +135,13 @@ public class Program
         foreach (var obj in stack)
             Console.Write("    {0}", obj);
         Console.WriteLine();
+
+        //This would initialize a new instance of student struct (which should initialize its fields)
+        //You can initialize the struct like: 'Struct student;' but you would need to assign the fields
+        Student student = new Student();
+        student.Name = "Tom";
+        student.Id = 1;
+
+        student.printInfo();
     }
 }
