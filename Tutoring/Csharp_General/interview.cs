@@ -147,5 +147,33 @@ public class Program
         student.Id = 1;
 
         student.printInfo();
+
+        //String manipulation
+        string str1 = "Hello World!";
+
+        //string sub = str1.Substring(6, 5); //Obtain substring
+        //str1 += "! Welcome to C#"; //Append to text
+        //string replaced = str1.Replace("World", "C#"); //Replaces all occurences of the word
+        //int index = str1.IndexOf("World"); //Gets index of the first occurence of the specified substring
+        //string trimmed = str1.Trim(); //Trims all whitespaces
+
+        //Print the 'str1' value after manipulation
+        Console.WriteLine(str1);
+
+        //'.Equal()' checks if the string object's value and other string object's value are equal
+        if (str1.Equals("Hello World!"))
+        {
+            Console.WriteLine("Hi");
+        }
+
+        //Replacing a character in a string using char[]
+        char[] chr_arr = str1.ToArray(); //Convert the string and get the char array
+        chr_arr[0] = 'h'; //Get the first index of the char array and replace the value with 'h'
+
+        //To obtain the final string from the char array you can initialize a new string object with the char array
+        //Or you can use the .Join() method using an empty separator with the char array
+        string value = new string(chr_arr); //string.Join("", chr_arr);
+
+        Console.WriteLine(value);
     }
 }
