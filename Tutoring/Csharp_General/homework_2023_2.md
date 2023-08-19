@@ -143,3 +143,5 @@ Pride and Prejudice, Jane Austen, Romance
 1984, George Orwell, Dystopian
 The Catcher in the Rye, J.D. Salinger, Fiction
 ```
+
+Add a 'Add to library' and 'Remove from library' button that modifies the text file where it adds or removes from the input text box. Remember to refresh the list box view.
