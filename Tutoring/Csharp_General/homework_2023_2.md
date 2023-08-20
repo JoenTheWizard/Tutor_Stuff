@@ -145,3 +145,5 @@ The Catcher in the Rye, J.D. Salinger, Fiction
 ```
 
 Add a 'Add to library' and 'Remove from library' button that modifies the text file where it adds or removes from the input text box. Remember to refresh the list box view.
+
+Add another listbox to the side of the main listbox that lists the Title, Author and Genre when a user clicks on the a specific book
