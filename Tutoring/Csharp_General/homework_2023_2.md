@@ -145,5 +145,22 @@ The Catcher in the Rye, J.D. Salinger, Fiction
 ```
 
 Add a 'Add to library' and 'Remove from library' button that modifies the text file where it adds or removes from the input text box. Remember to refresh the list box view.
-
 Add another listbox to the side of the main listbox that lists the Title, Author and Genre when a user clicks on the a specific book
+
+# Task 11
+## Interfaces
+Create an IProduct interface that includes the common properties and methods of a product. Then create two classes, Book and ElectronicDevice, that implement the IProduct interface.
+Using this interface:
+```cs
+public interface IProduct {
+    string Name { get; set; }
+    decimal Price { get; set; }
+    string GetProductDetails();
+}
+```
+
+The `GetProductDetails()` strings should return:
+For Book:
+- `$"Book: {Name}, Author: {Author}, Price: {Price}";`
+For ElectronicDeive:
+- `$"Electronic: {Name}, Brand: {Brand}, Price: {Price}";`
