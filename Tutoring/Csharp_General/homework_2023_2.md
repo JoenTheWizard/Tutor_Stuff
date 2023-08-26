@@ -160,7 +160,5 @@ public interface IProduct {
 ```
 
 The `GetProductDetails()` strings should return:
-For Book:
-- `$"Book: {Name}, Author: {Author}, Price: {Price}";`
-For ElectronicDeive:
-- `$"Electronic: {Name}, Brand: {Brand}, Price: {Price}";`
+- Book class: `$"Book: {Name}, Author: {Author}, Price: {Price}";`
+- ElectronicDevice class: `$"Electronic: {Name}, Brand: {Brand}, Price: {Price}";`
