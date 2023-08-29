@@ -165,7 +165,7 @@ The `GetProductDetails()` strings should return:
 
 # Task 12
 ## Virtual/Override polymorphism
-Create a base class Shape with a virtual method Draw(). Then create three derived classes Circle, Rectangle, and Triangle, each of which overrides the Draw() method to output a specific message for each shape (You can just print something like `Drawing [shape]...`). Finally, create a list of Shape objects, add instances of Circle, Rectangle, and Triangle to it, and iterate over the list calling Draw() on each shape. The output should output the correct message for each shape type.
+Create a base class Shape with a virtual method Draw(). Then create three derived classes Circle, Rectangle, and Triangle, each of which overrides the Draw() method to output a specific message for each shape (You can just print something like `Drawing a [shape]`). Finally, create a list of Shape objects, add instances of Circle, Rectangle, and Triangle to it, and iterate over the list calling Draw() on each shape. The output should output the correct message for each shape type.
 Example output:
 ```cs
 Drawing a circle
