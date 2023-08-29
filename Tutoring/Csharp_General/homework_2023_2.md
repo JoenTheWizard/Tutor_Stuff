@@ -162,3 +162,17 @@ public interface IProduct {
 The `GetProductDetails()` strings should return:
 - Book class: `$"Book: {Name}, Author: {Author}, Price: {Price}";`
 - ElectronicDevice class: `$"Electronic: {Name}, Brand: {Brand}, Price: {Price}";`
+
+# Task 12
+## Virtual/Override polymorphism
+Create a base class Shape with a virtual method Draw(). Then create three derived classes Circle, Rectangle, and Triangle, each of which overrides the Draw() method to output a specific message for each shape (You can just print something like `Drawing [shape]...`). Finally, create a list of Shape objects, add instances of Circle, Rectangle, and Triangle to it, and iterate over the list calling Draw() on each shape. The output should output the correct message for each shape type.
+Example output:
+```cs
+Drawing a circle
+Drawing a rectangle
+Drawing a triangle
+```
+
+# Task 11
+## Windows Forms
+Recreate one of the previous WPF GUIs you have created from the previous tutoring sessions (it could be the Library GUI, the Text Editor GUI etc. Just pick one of them to do) within the .NET Windows Forms framework.
