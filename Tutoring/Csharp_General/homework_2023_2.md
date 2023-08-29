@@ -173,6 +173,6 @@ Drawing a rectangle
 Drawing a triangle
 ```
 
-# Task 11
+# Task 13
 ## Windows Forms
 Recreate one of the previous WPF GUIs you have created from the previous tutoring sessions (it could be the Library GUI, the Text Editor GUI etc. Just pick one of them to do) within the .NET Windows Forms framework.
