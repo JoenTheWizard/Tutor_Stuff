@@ -175,4 +175,4 @@ Drawing a triangle
 
 # Task 13
 ## Windows Forms
-Recreate one of the previous WPF GUIs you have created from the previous tutoring sessions (it could be the Library GUI, the Text Editor GUI etc. Just pick one of them to do) within the .NET Windows Forms framework.
+Recreate one of the previous WPF GUIs you have created from the previous tutoring sessions to the .NET Windows Forms framework. It could be the Library GUI, the Text Editor GUI etc (Just pick one of them to do, or both if you want to)
