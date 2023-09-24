@@ -176,3 +176,81 @@ Drawing a triangle
 # Task 13
 ## Windows Forms
 Recreate one of the previous WPF GUIs you have created from the previous tutoring sessions to the .NET Windows Forms framework. It could be the Library GUI, the Text Editor GUI etc (Just pick one of them to do, or both if you want to)
+
+# Task 14
+## Code to UML
+Convert the following C# code to a UML diagram
+```cs
+public class Person {
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public Address Address { get; set; }
+    public List<PhoneNumber> PhoneNumbers { get; set; }
+    public void Greet() {
+        Console.WriteLine("Hello, I'm " + Name);
+    }
+}
+
+public class Employee : Person {
+    public string EmployeeId { get; set; }
+    public string Department { get; set; }
+    public void Work() {
+	Console.WriteLine("Working...");
+    }
+}
+
+public class Address {
+    public string Street { get; set; }
+    public string City { get; set; }
+    public string State { get; set; }
+    public string ZipCode { get; set; }
+}
+
+public class PhoneNumber {
+    public string Number { get; set; }
+    public string Type { get; set; }
+}
+
+public class Course {
+    public int CourseId { get; set; }
+    public string CourseName { get; set; }
+    public Department Department { get; set; }
+    public ICollection<Student> Students { get; set; }
+    public ICollection<Instructor> Instructors { get; set; }
+}
+
+public class Department {
+    public int DepartmentId { get; set; }
+    public string DepartmentName { get; set; }
+    public ICollection<Course> Courses { get; set; }
+}
+
+public class Student : Person {
+    public int StudentId { get; set; }
+    public ICollection<Course> Courses { get; set; }
+    private void EnrollCourse(Course course) {
+        Courses.Add(course);
+    }
+
+    private void DropCourse(Course course) {
+        Courses.Remove(course);
+    }
+}
+
+public class Instructor : Person {
+    public int InstructorId { get; set; }
+    public ICollection<Course> Courses { get; set; }
+    private OfficeAssignment OfficeAssignment { get; set; }
+}
+
+public class OfficeAssignment {
+    public int OfficeAssignmentId { get; set; }
+    public string Location { get; set; }
+    public Instructor Instructor { get; set; }
+}
+```
+
+## Task 15
+## UML to code
+Convert the following UML diagram to C# code
+[https://i.ibb.co/ThXk4sV/class.jpg]()
