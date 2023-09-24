@@ -253,4 +253,3 @@ public class OfficeAssignment {
 ## Task 15
 ## UML to code
 Convert the following UML diagram to C# code
-[https://i.ibb.co/ThXk4sV/class.jpg]()
