@@ -14,11 +14,11 @@ int main() {
     int num = 10;
     int *p = &num;
 
-    printf("Before change: %d\n", num);
+    printf("Before change: %i\n", num);
 
     //Change the value here using 'p'
 
-    printf("After change: %d\n", num);
+    printf("After change: %i\n", num);
 
     return 0;
 }
