@@ -16,7 +16,7 @@ int main() {
 
     printf("Before change: %i\n", num);
 
-    //Change the value here using 'p'
+    //Change the value here using 'p'. Hint: Try utilizing dereferences
 
     printf("After change: %i\n", num);
 
