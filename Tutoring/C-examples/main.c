@@ -72,11 +72,9 @@ int main() {
     int* dynamicarr = (int*)malloc(amount * sizeof(int));
 
     //Assign a value to each of the elements in the dynamically allocated array
-    int l = 1;
     for (int i = 0; i < amount; i++) {
-        dynamicarr[i] = l;
-        printf("%i\n", l);
-        l++;
+        dynamicarr[i] = i;
+        printf("%i\n", i);
     }
 
     //We need to free the dynamically allocated memory ourselves
