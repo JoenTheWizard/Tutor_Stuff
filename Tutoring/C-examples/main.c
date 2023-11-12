@@ -61,6 +61,7 @@ int main() {
     carr[15] = 5;
 
     //Dynamic memory allocation is a method to allocate memory during runtime.
+    //You can use tools like Valgrind to check for any memory leaks that is caused by the program (You can install it with: sudo apt-get install valgrind)
     printf("Enter memory allocation: ");
 
     //Here we use scanf to take user input for the size of dynamically allocated array
