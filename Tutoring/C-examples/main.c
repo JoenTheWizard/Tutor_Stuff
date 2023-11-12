@@ -1,6 +1,7 @@
-//To compile the program we simply run 'gcc main.c -o main' and execute the output executable with './main'
-//Include 'stdio.h' for standard input and outputfunctionalities
+//Include 'stdio.h' for standard input and output functionalities
 #include <stdio.h>
+//Include 'stdlib.h' for dynamic memory allocation functionalities
+#include <stdlib.h>
 
 //Declare main (which returns int)
 int main() {
@@ -38,6 +39,47 @@ int main() {
     int* k = &j;
     //Print the address of the variable 'j' using 'k' pointer
     printf("%p\n", k);
+
+    //Store array 'arr1'
+    int arr1[] = {3, 2, 1};
+    //Create pointer to 'arr1'
+    int* pointer = arr1;
+    //Print integer from memory address (added by 1, so this will print the second value of the array)
+    printf("%i\n", *(pointer + 1));
+
+    //Segmentation fault here
+    //This is because we are attempting to modify a string literal which is read only.
+    //Segmentation faults are caused when we attempt to access memory in which we are not allowed to modify
+    // char* str2 = "Hello C";
+    // *(str2) = 'Y';
+
+    //Undefined behaviour
+    //C doesn't check for bounds in arrays and this is defined as undefined behaviour
+    //Undefined behaviour simply means that the behaviour of the program can be random
+    //For example it still run correctly, could randomly crash, overwrite other data or something else (depending on compiler or system it can be different and handled)
+    int carr[3];
+    carr[15] = 5;
+
+    //Dynamic memory allocation is a method to allocate memory during runtime.
+    printf("Enter memory allocation: ");
+
+    //Here we use scanf to take user input for the size of dynamically allocated array
+    int amount;
+    scanf("%i", &amount);
+
+    //Allocate memory for 'amount' number of integers. malloc() takes in amount of bytes
+    int* dynamicarr = (int*)malloc(amount * sizeof(int));
+
+    //Assign a value to each of the elements in the dynamically allocated array
+    int l = 1;
+    for (int i = 0; i < amount; i++) {
+        dynamicarr[i] = l;
+        printf("%i\n", l);
+        l++;
+    }
+
+    //We need to free the dynamically allocated memory ourselves
+    free(dynamicarr);
 
     //Return 0 status (success)
     return 0;
