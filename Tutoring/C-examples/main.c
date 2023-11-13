@@ -56,7 +56,7 @@ int main() {
     //Undefined behaviour
     //C doesn't check for bounds in arrays and this is defined as undefined behaviour
     //Undefined behaviour simply means that the behaviour of the program can be random
-    //For example it still run correctly, could randomly crash, overwrite other data or something else (depending on compiler or system it can be different and handled)
+    //For example it still run correctly, could randomly crash, overwrite other data or something else (depending on compiler or system it can be differently handled)
     int carr[3];
     carr[15] = 5;
 
