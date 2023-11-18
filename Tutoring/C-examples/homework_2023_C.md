@@ -27,3 +27,7 @@ int main() {
 # Task 2
 ## Dynamic memory
 Dynamically allocate an array of integers of size 5, assign values to each index (1-5) and print it. Make sure to free the memory afterwards (you can use tools like `valgrind` to help you to detect memory leaks).
+
+# Task 3
+## Makefiles
+Write a Makefile that compiles a C program with source file: main.c. The executable should be named `myprogram`, in the makefile store the executable name in a variable called `EXEC`. The Makefile should also include a clean target that removes all the generated files.
