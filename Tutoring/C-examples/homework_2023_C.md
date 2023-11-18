@@ -26,7 +26,7 @@ int main() {
 
 # Task 2
 ## Dynamic memory
-Dynamically allocate an array of integers of size 5, assign values to each index (1-5) and print it. Make sure to free the memory afterwards (you can use tools like `valgrind` to help you to detect memory leaks).
+Dynamically allocate an array of integers of size 5, assign values to each index (1-5) and print it. Make sure to free the memory afterwards (you can use tools like `valgrind` to help you to detect memory leaks). Remember to use Valgrind by doing `valgrind ./<executable>`, in which you can see the heap summary.
 
 # Task 3
 ## Makefiles
