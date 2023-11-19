@@ -27,12 +27,12 @@ int main() {
 
     printf("After free: Value is equal to %i", *ptr);
 
-    int* t = getData();
-    printf("Value: %i", *t);
+    //int* t = getData();
+    //printf("Value: %i", *t);
 
-    int t = 3;
-    getData(&t);
-    printf("t is equal to: %i", t);
+    //int t = 3;
+    //getData(&t);
+    //printf("t is equal to: %i", t);
 
     int* getVal = getData();
     printf("getVal is equal to: %i", *getVal);
