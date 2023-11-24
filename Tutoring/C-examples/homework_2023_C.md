@@ -31,3 +31,7 @@ Dynamically allocate an array of integers of size 5, assign values to each index
 # Task 3
 ## Makefiles
 Write a Makefile that compiles a C program with source file: main.c. The executable should be named `myprogram`, in the makefile store the executable name in a variable called `EXEC`. The Makefile should also include a `clean` target that removes all the generated files.
+
+# Task 4
+## Modify array
+Make a function `modify_array()` that takes in the array {1,2,3} and modifies the first value ('1') to another value (can be any other value). Make sure to print the array before and after its passed to modify_array()
