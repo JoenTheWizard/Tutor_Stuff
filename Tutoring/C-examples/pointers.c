@@ -38,6 +38,26 @@ int main() {
     //Get the size (in bytes) of the dereferenced pointer of the 'pointer' variable (from arr1)
     printf("Size of array: %d\n", sizeof(*pointer));
 
+       //Pointer from ptr() function
+    int* p = ptr();
+
+    //Free p
+    free(p);
+    p = NULL;
+
+    //This is undefined behaviour
+    int t;
+
+    //fgets
+    char str[50];
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    printf("You entered: %s", str);
+
+
+    //...
+    
     return 0;
 }
 
