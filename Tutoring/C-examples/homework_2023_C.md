@@ -38,4 +38,4 @@ Make a function `modify_array()` that takes in the array {1,2,3} and modifies th
 
 # Task 5
 ## Arrays and pointers
-Write a C program that includes an array of integers (of any size you want) and a pointer. Assign the address of the first element of the array to the pointer. Now, use the pointer to traverse the array and print its elements. Explain how this works in terms of memory addresses.
+Write a C program that includes an array of integers (of any size you want greater than 1) and a pointer. Assign the address of the first element of the array to the pointer. Now, use the pointer to traverse the array and print its elements. Explain how this works in terms of memory addresses.
