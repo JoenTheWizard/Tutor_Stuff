@@ -35,3 +35,7 @@ Write a Makefile that compiles a C program with source file: main.c. The executa
 # Task 4
 ## Modify array
 Make a function `modify_array()` that takes in the array {1,2,3} and modifies the first value ('1') to another value (can be any other value). Make sure to print the array before and after its passed to modify_array()
+
+# Task 5
+## Arrays and pointers
+Write a C program that includes an array of integers and a pointer. Assign the address of the first element of the array to the pointer. Now, use the pointer to traverse the array and print its elements. Explain how this works in terms of memory addresses.
