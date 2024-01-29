@@ -4,6 +4,7 @@ void swap(int* a, int* b) {
     int tmp=*a;*a=*b;*b=tmp;
 }
 
+//Quick sort using last value as pivot. Quick sort can use the first or the median value in the array as pivot
 void quicksort(int* arr, int start, int end) {
     if (start >= end) return;
     
