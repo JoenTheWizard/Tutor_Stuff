@@ -16,13 +16,11 @@ void quicksort(int* arr, int start, int end) {
     
     for (; j < end; j++) {
        if (arr[j] < pivot) {
-            i++;
-            swap(&arr[i], &arr[j]);
+            swap(&arr[++i], &arr[j]);
         }
     }
     
-    i++;
-    swap(&arr[i], &arr[j]);
+    swap(&arr[++i], &arr[j]);
     
     quicksort(arr, start, i - 1);
     quicksort(arr, i + 1, end);
