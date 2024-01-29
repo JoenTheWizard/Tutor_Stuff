@@ -4,7 +4,8 @@ void swap(int* a, int* b) {
     int tmp=*a;*a=*b;*b=tmp;
 }
 
-//Quick sort using last value as pivot. Quick sort can use the first or the median value in the array as pivot
+//Quick sort using last value as pivot. Quick sort can also use the first or the median value in the array as pivot.
+//It's a recursive algorithm meaning that it will execute itself until a condition is fully satisfied and will return.
 void quicksort(int* arr, int start, int end) {
     if (start >= end) return;
     
