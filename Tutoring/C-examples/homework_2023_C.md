@@ -41,7 +41,7 @@ Write a C program that includes an array of integers (of any size you want great
 
 # Task 6
 ## Bubble sort
-Write a program that uses the bubble sort algorithm to sort an array of characters (Hint: 'chars' can be compared with their **ASCII values***. Try to sort it ascending order and then descending order and describe what you did to change it. You can use the below as a template
+Write a program that uses the bubble sort algorithm to sort an array of characters (Hint: 'chars' can be compared with their **ASCII values**. Try to sort it ascending order and then descending order and describe what you did to change it. You can use the below as a template
 
 ```c
 #include <stdio.h>
