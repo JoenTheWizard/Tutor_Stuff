@@ -9,8 +9,7 @@ If you are having troubles with some of the questions, it's fine to skip some of
 Write a program to demonstrate how to use a pointer to change the value of a variable. The following program is a template:
 ```c
 #include <stdio.h>
-
-int main() {
+int main(void) {
     int num = 10;
     int *p = &num;
 
@@ -39,3 +38,25 @@ Make a function `modify_array()` that takes in the array {1,2,3} and modifies th
 # Task 5
 ## Arrays and pointers
 Write a C program that includes an array of integers (of any size you want greater than 1) and a pointer. Assign the address of the first element of the array to the pointer. Now, use the pointer to traverse the array and print its elements. Explain how this works in terms of memory addresses.
+
+# Task 6
+## Bubble sort
+Write a program that uses the bubble sort algorithm to sort an array of characters (Hint: 'chars' can be compared with their **ASCII values***. Try to sort it ascending order and then descending order and describe what you did to change it. You can use the below as a template
+
+```c
+#include <stdio.h>
+int main(void) {
+    char arr[] = {'j','l','u','c','k','a','t','w'};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    
+    //Call your function here: bubbleSort()
+    
+    printf("Sorted array: ");
+    for (int i=0; i < n; i++)
+        printf("%c ", arr[i]);
+        
+    return 0;
+}
+```
+
+
