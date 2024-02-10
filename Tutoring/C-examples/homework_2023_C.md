@@ -59,4 +59,22 @@ int main(void) {
 }
 ```
 
+# Task 7
+## Loops (revision)
+Write a C program that reads a positive integer `n` from the user and then displays the sum of all the values from 1 to n
+Example how the program would look like:
+```c
+./myprogram
+Enter n value: 3
+Sum: 6
+```
 
+# Task 8
+## Conditions (revision)
+ Write a C program that reads a temperature in Celsius and displays a message indicating the weather condition based on the following ranges:
+- Temp < 0: "Freezing weather"
+- Temp 0-10: "Very cold weather"
+- Temp 10-20: "Cold weather"
+- Temp 20-30: "Normal temperature"
+- Temp 30-40: "It's hot"
+- Temp >= 40: "It's very hot"
