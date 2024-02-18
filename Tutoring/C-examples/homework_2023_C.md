@@ -85,4 +85,4 @@ Write a C program that calculates the sum of all multiples of 3 or 5 below a giv
 
 # Task 10
 ## sizeof()
-Write a C program that calculates the size of various data types. The program should output the size in bytes for the following data types: char, int, float, double, and long. Additionally, make an array (any length greater than 1) of each of those types and print the sizes (in bytes). Explain the outputs.
+Write a C program that calculates the size of various data types. The program should output the size in bytes for the following data types: `char`, `int`, `float`, `double`, and `long`. Additionally, make an array (any length greater than 1) of each of those types and print the sizes (in bytes). Explain the outputs.
