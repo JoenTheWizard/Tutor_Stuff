@@ -80,9 +80,9 @@ Sum: 6
 - Temp >= 40: "It's very hot"
 
 # Task 9
-# More loops
+## More loops
 Write a C program that calculates the sum of all multiples of 3 or 5 below a given number using a while loop. The program should prompt the user to enter a non-negative integer, and then output the sum of all multiples of 3 and 5 that are less than that number.
 
 # Task 10
-# sizeof()
+## sizeof()
 Write a C program that calculates the size of various data types. The program should output the size in bytes for the following data types: char, int, float, double, and long. Additionally, make an array (any length greater than 1) of each of those types and print the sizes (in bytes). Explain the outputs.
