@@ -86,3 +86,7 @@ Write a C program that calculates the sum of all multiples of 3 or 5 below a giv
 # Task 10
 ## sizeof()
 Write a C program that calculates the size of various data types. The program should output the size in bytes for the following data types: `char`, `int`, `float`, `double`, and `long`. Additionally, make an array (any length greater than 1) of each of those types and print the sizes (in bytes). Explain the outputs.
+
+# Task 11
+## Fibonacci sequence
+Write a C program that uses recursion to generate the first N terms of the Fibonacci sequence, where N is a positive integer input by the user. The program should prompt the user to enter the value of N, then print the first N terms of the Fibonacci sequence (remember that the Fibonacci Sequence is `F(n) = F(n-1) + F(n-2)`).
