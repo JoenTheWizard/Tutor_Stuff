@@ -69,7 +69,7 @@ int main() {
     scanf("%i", &amount);
 
     //Allocate memory for 'amount' number of integers. malloc() takes in amount of bytes
-    int* dynamicarr = (int*)malloc(amount * sizeof(int));
+    int* dynamicarr = malloc(amount * sizeof(int));
 
     //Assign a value to each of the elements in the dynamically allocated array
     for (int i = 0; i < amount; i++) {
