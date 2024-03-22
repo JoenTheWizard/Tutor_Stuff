@@ -5,7 +5,6 @@
 
 //If you want an optional and extra read on good 'style' for C programming here is:
 //https://felipec.github.io/good-taste/parts/1.html (https://github.com/mkirchner/linked-list-good-taste)
-//https://felipec.wordpress.com/2024/03/03/c-skill-issue-how-the-white-house-is-wrong/
 
 //Declare main (which returns int)
 int main() {
