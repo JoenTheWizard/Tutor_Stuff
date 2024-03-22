@@ -68,7 +68,10 @@ int main() {
     int amount;
     scanf("%i", &amount);
 
-    //Allocate memory for 'amount' number of integers. malloc() takes in amount of bytes
+    //Allocate memory for 'amount' number of integers. malloc() takes in amount of bytes and will return a void* type
+    //void* is a type where the value it's pointing to is unknown.
+    //You can cast the void* return, but usually it's not quite necessary
+    //You can read more on void* casting here: https://stackoverflow.com/questions/605845/should-i-cast-the-result-of-malloc
     int* dynamicarr = malloc(amount * sizeof(int));
 
     //Assign a value to each of the elements in the dynamically allocated array
