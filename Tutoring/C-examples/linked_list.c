@@ -10,6 +10,7 @@ typedef struct {
     node_l* head;
 } List;
 
+//Push method, will add a node to the top of the list
 void push(List* list, int value) {
     node_l* temp = malloc(sizeof(node_l));
 
@@ -63,18 +64,23 @@ int main() {
     two->next   = three;
     three->next = NULL; //It's next value is NULL because its the last value in the list
 
+    //Specify to the list that the 'one' node is the beginning (head) of our list
     list->head = one;
 
+    //Print the current head node's next node value
     printf("%d\n", list->head->next->value);
 
+    //Push a new node to the top of the List (we created a new node with the value 4)
     push(list, 4);
+    
+    //Print the new head
     printf("%d", list->head->value);
 
     //Freeing the malloc()s that we made
     free(one);
     free(two);
     free(three);
-    free(list->head);
+    free(list->head); //list->head here was malloc()ed from our 'push()' function. 
 
     free(list);
 
