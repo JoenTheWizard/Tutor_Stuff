@@ -90,3 +90,8 @@ Write a C program that calculates the size of various data types. The program sh
 # Task 11
 ## Fibonacci sequence
 Write a C program that uses recursion to generate the first N terms of the Fibonacci sequence, where N is a positive integer input by the user. The program should prompt the user to enter the value of N, then print the first N terms of the Fibonacci sequence (remember that the Fibonacci Sequence is `F(n) = F(n-1) + F(n-2)`).
+
+# Task 12
+## Graph theory
+Write a program to represent the following graph using an adjency matrix.
+[https://nc5thgrademath.weebly.com/uploads/4/5/0/5/4505897/4630187.png?267]()
