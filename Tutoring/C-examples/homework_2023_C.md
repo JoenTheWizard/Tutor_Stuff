@@ -94,4 +94,4 @@ Write a C program that uses recursion to generate the first N terms of the Fibon
 # Task 12
 ## Graph theory
 Write a program to represent the following graph using an adjency matrix.
-![]([https://miro.medium.com/v2/resize:fit:1400/1*TYRSuON0vVxy8olllrBVEw.png](https://nc5thgrademath.weebly.com/uploads/4/5/0/5/4505897/4630187.png?267))
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/6n-graf.svg/1200px-6n-graf.svg.png)
